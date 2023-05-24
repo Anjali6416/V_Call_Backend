@@ -50,7 +50,6 @@ const registerNewUser = async (req, res) => {
 const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
-    console.log("Payload: ", email, password);
     if (!email || !password) {
       return res
         .status(500)
